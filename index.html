@@ -41,8 +41,9 @@
 			<p class="slogan_text">LIKE TO DO CREATIVE WORKS</p>
 			<div class="slogan_btn"><a href="#about">scrol down</a> </div>
 		</section>
-		<div class="wrapper">
-			<section class="about" id="about">
+		
+		<section class="about" id="about">
+			<div class="wrapper">		
 				<div class="row">
 					<h4 class="about_slog site_slog">ABOUT US</h4>
 				</div>
@@ -72,10 +73,12 @@
 									tur adipisicing elit, sed do ...
 								</li>
 							</ul>
-						</div>									
+						</div>	
+														
 				</div>
-			</section>			
-		</div>
+			</div>	
+		</section>			
+		
 		<section class="get">
 			<div class="wrapper">
 				<div class="row">
@@ -86,25 +89,30 @@
 						<br> 	ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</div>
 				<div class="row">
-					<form action="" class="get_form">
+					<form action="#" class="get_form">
 						<div>
-							<label for="getName">Name</label>
-							<input type="text" id="getName">							
+							<label for="getName" >Name * (Text format)</label>
+							<input type="text" id="getName" required  pattern="[A-Za-zА-Яа-яЁё]+" title="Введите имя">							
 						</div>
 						<div>
-							<label for="getMail">Mail</label>
-							<input type="text" id="getMail">							
+							<label for="getMail">Number * (Number format)</label>
+							<input type="tel" id="getNumber" required pattern="\+?[0-9\s\-\(\)]+" maxlength="13" autocomplete="off" title="Введите номер телефона">							
 						</div>
 						<div>
-							<label for="getMassege">Massege</label>
-							<textarea  id="getMassege"></textarea>						
+							<label for="getMail">Mail * (Text format)</label>
+							<input type="text" id="getMail" required  pattern="(\w\.?)+@[\w\.-]+\.\w{2,}">							
+						</div>
+
+						<div>
+							<label for="getMassege">Massege * (Text format)</label>
+							<textarea  id="getMassege" required pattern="[аА-яЯ]+" title="Введите текст вашего сообщения"></textarea>						
 						</div>
 						<div>
-							<input type="button" value="Send Message" class="getForm_submit">
+							<input type="submit" value="Send Message" class="getForm_submit">
 						</div>
 						
 					</form>
-					<div id="str"></div>		
+							
 				</div>
 
 			</div>
