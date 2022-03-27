@@ -318,7 +318,9 @@ section.about {
   text-align: center;
   padding: 100px 0;
 }
-
+.about_title {
+  justify-content: center;
+}
 section.about .about_slog {
   margin-bottom: 20px;
 }
